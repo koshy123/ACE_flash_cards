@@ -11,3 +11,9 @@ If the anwser matches, then the screen will let the user know that it was right 
 Then the score will go up by one.
 
 He it reaches a score of 10. The player wins 
+
+
+
+
+
+
