@@ -46,3 +46,13 @@ h1{
     color: white;
     transform: rotateY(180deg);
   }
+
+
+
+  #name{
+    font-size: 30px;
+  }
+
+#inputTitle{
+  font-size: 30px;;
+}
