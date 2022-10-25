@@ -28,3 +28,16 @@ function newCard(event) {
     .catch(err => { console.log("something went wrong...", err) })    
 }
 
+
+
+
+// Need object to store the questions and anwsers
+
+let questions = {
+    question1: "What is the largest bone in the body",
+    question2: "What organ pumps blood",
+    question3: "What is the largest organ"
+}
+    
+
+
