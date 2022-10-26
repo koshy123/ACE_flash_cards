@@ -1,17 +1,22 @@
 console.log("hi");
 
 
-let submit = document.createElement("");  // This is creating a button node 
+//let submit = document.createElement("");  // This is creating a button node 
 let submitText = document.createTextNode("Memorize")  // This is creating a text but not stored anywhere
-let tom = document.querySelector(".name"); 
 
-submit.addEventListener('click', enterAnswer)
+let tom = document.querySelector('#name')
+tom.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      if(tom.innerHTML === "hi"){
+        console.log("equals 5")
+      }
+    }
+});
 
-
-
+/*
 function newCard(event) {
     event.preventDefault()
-    tom.innerHTML = " ";
+    input.innerHTML = " ";
     fetch('', { })
     .then(res => { return res })
     .then(res => { 
@@ -24,7 +29,7 @@ function newCard(event) {
     })
     .catch(err => { console.log("something went wrong...", err) })    
 }
-
+*/
 
 
 
@@ -37,7 +42,7 @@ let questions = {
 }
     
 
-var myQuestions = [
+let myQuestions = [
 	{
 		question: "What is 10/2?",
 		answers: {
@@ -61,30 +66,11 @@ var myQuestions = [
 
 
 
-var myQuestions = [
-    {
-      question: "What is 10/2?",
-      answers: {
-        a: '3',
-        b: '5',
-        c: '115'
-      },
-      correctAnswer: 'b'
-    },
-    {
-      question: "What is 30/3?",
-      answers: {
-        a: '3',
-        b: '5',
-        c: '10'
-      },
-      correctAnswer: 'c'
-    }
-  ];
+
   
-  var quizContainer = document.getElementById('quiz');
-  var resultsContainer = document.getElementById('results');
-  var submitButton = document.getElementById('submit');
+  let quizContainer = document.getElementById('quiz');
+  let resultsContainer = document.getElementById('results');
+  let submitButton = document.getElementById('submit');
   
   generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
   
@@ -92,8 +78,8 @@ var myQuestions = [
   
     function showQuestions(questions, quizContainer){
       // we'll need a place to store the output and the answer choices
-      var output = [];
-      var answers;
+      let output = [];
+      let answers;
   
       // for each question...
       for(var i=0; i<questions.length; i++){
@@ -129,11 +115,11 @@ var myQuestions = [
     function showResults(questions, quizContainer, resultsContainer){
       
       // gather answer containers from our quiz
-      var answerContainers = quizContainer.querySelectorAll('.answers');
+      let answerContainers = quizContainer.querySelectorAll('.answers');
       
       // keep track of user's answers
-      var userAnswer = '';
-      var numCorrect = 0;
+      let userAnswer = '';
+      let numCorrect = 0;
       
       // for each question...
       for(var i=0; i<questions.length; i++){
