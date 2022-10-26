@@ -20,7 +20,6 @@ function newCard(event) {
            const card = document.createElement("div");
            tom.appendChild(newCard)
            newArea.innerText =  card[i].name + ", "
-           
         }    
     })
     .catch(err => { console.log("something went wrong...", err) })    
@@ -170,3 +169,5 @@ var myQuestions = [
     }
   
   }
+
+
