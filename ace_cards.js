@@ -4,14 +4,14 @@ console.log("hi");
 //let submit = document.createElement("");  // This is creating a button node 
 let submitText = document.createTextNode("Memorize")  // This is creating a text but not stored anywhere
 
-let tom = document.querySelector('#name')
-tom.addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      if(tom.innerHTML === "hi"){
-        console.log("equals 5")
-      }
-    }
-});
+let tom = document.querySelector('#name');
+tom.addEventListener('keyup', function(){
+    let text = tom.value;
+    if(text === "hi"){
+    console.log('New text is "' + text + '"');
+  }});
+
+
 
 /*
 function newCard(event) {
@@ -29,7 +29,7 @@ function newCard(event) {
     })
     .catch(err => { console.log("something went wrong...", err) })    
 }
-*/
+
 
 
 
@@ -157,3 +157,7 @@ let myQuestions = [
   }
 
 
+
+
+
+  //https://stackoverflow.com/questions/14542062/eventlistener-enter-key

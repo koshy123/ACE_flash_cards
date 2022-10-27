@@ -52,6 +52,7 @@ h1{
   .name{
     font-size: 30px;
     border-color: red;
+    border-width: 5px;
   }
 
 #inputTitle{
@@ -88,3 +89,11 @@ body{
 
 
 
+
+body {
+
+  background: #0f2027; /* fallback for old browsers */
+  background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+
+  color: #fff;
+}
