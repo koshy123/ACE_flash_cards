@@ -4,29 +4,43 @@ let totalScore = 0;
 
 
 // Need object to store the questions and anwsers
-const questions = [
-    "what pumps blood",
-    "what do you use to smell",
-    "what do you use to taste",
-    "what do you use to hear",
-    "what do you use to pick up items"
-]
+const data = [{
+question1: "Sa"
 
-const data = [
-    "heart", "nose", "tongue", "ear", "hands"
-]
+},
 
+{
+question: "sds"
+},
+{
+question: "dss"    
+}
+]
+let dog = "freedom"
 
 //let submit = document.createElement("");  // This is creating a button node 
 let submitText = document.createTextNode("Memorize")  // This is creating a text but not stored anywhere
-
 let tom = document.querySelector('#name');
-tom.addEventListener('keyup', function(){
-    let text = tom.value;
-    if (text === data[1]){
-    console.log("good")
-    }});
+ let text = tom.value;
 
+tom.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        {
+            if(text === dog);
+            console.log("hi")
+        }
+    }
+});
+
+/*
+tom.addEventListener('keyup', function(){
+   // tom.addEventListener()
+    for(let i = 0; i < data.length; i++)
+    {
+        if(text === data[i].question1);
+       // console.log("hi")
+    }  });
+*/
 
 
 
