@@ -21,31 +21,59 @@ allanswers = [
     "skin",
 ]
  
-//let submit = document.createElement("");  // This is creating a button node 
-let submitText = document.createTextNode("Memorize")  // This is creating a text but not stored anywhere
-let tom = document.querySelector('#name');
+let text = '';
+
+let textBox = document.querySelector('.input');
 let button = document.querySelector('#button');
 let show = document.querySelector('.showQuestion');
+let score = document.querySelector('.totalScore');
 
 let currentQuestion = 0;
 
-for(let i = 0; i<allQuestions.length; i++){
-    let currentQuestion = allQuestions[i]
-   // console.log(currentQuestion)
-     show.innerHTML = currentQuestion
 
-     button.addEventListener('click', function (evt){
+   //fillQuestion = allQuestions[currentQuestion]
+    //show.innerHTML = fillQuestion
+   //console.log(fillQuestion)
+
+     button.addEventListener('click', checkInput)
+
+
+     function checkInput(evt){
+        evt.preventDefault()
+        console.log(textBox.value)
+        text = textBox.value
+        console.log(allanswers[currentQuestion])
+
+        fillQuestion = allQuestions[currentQuestion]
+        show.innerHTML = fillQuestion
+       console.log(fillQuestion)
+
+        if(text === allanswers[currentQuestion] ){
+            console.log("right anwser")
+            totalScore = totalScore + 1
+            currentQuestion = currentQuestion + 1 
+            fillQuestion = allQuestions[currentQuestion]
+            show.innerHTML = fillQuestion
+            
+        }
+          console.log(totalScore)
+          score.innerHTML = "Total Score" + totalScore
+
+     }
+
+   
+
+
+/*
+    button.addEventListener('click', function (evt){
     evt.preventDefault()
-    for(let i=0; i < allanswers.length; i++){
-    let text = tom.value;
+    text = textBox.value
     if(text === allanswers[currentQuestion]){
     totalScore ++
-    currentQuestion ++
-}}
-    console.log(totalScore)
+    
+    console.log(currentQuestion)
+    }
 });
-
-
-}
-
+console.log(totalScore)
+*/
 

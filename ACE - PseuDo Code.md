@@ -189,3 +189,33 @@ function newCard(event) {
   //https://stackoverflow.com/questions/14542062/eventlistener-enter-key
 
 
+
+// Need object to store the questions and anwsers
+/*
+const data = 
+[
+{question: "Pumps blood in body",
+answer: "heart"}
+,
+
+
+{
+question: "You use to hear",
+answer: "ear"}
+,
+
+
+{question: "You use to see",
+answer: "eye"}
+,
+
+
+{question: "You use to taste",
+answer: "tongue"}
+,
+
+
+{question: "Largest organ in body",
+answer: "skin"}
+]
+*/
