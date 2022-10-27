@@ -1,4 +1,20 @@
-console.log("hi");
+
+//My total score 
+let totalScore = 0;
+
+
+// Need object to store the questions and anwsers
+const questions = [
+    "what pumps blood",
+    "what do you use to smell",
+    "what do you use to taste",
+    "what do you use to hear",
+    "what do you use to pick up items"
+]
+
+const data = [
+    "heart", "nose", "tongue", "ear", "hands"
+]
 
 
 //let submit = document.createElement("");  // This is creating a button node 
@@ -7,41 +23,15 @@ let submitText = document.createTextNode("Memorize")  // This is creating a text
 let tom = document.querySelector('#name');
 tom.addEventListener('keyup', function(){
     let text = tom.value;
-    if(text === "hi"){
-    console.log('New text is "' + text + '"');
-  }});
-
-
-
-/*
-function newCard(event) {
-    event.preventDefault()
-    input.innerHTML = " ";
-    fetch('', { })
-    .then(res => { return res })
-    .then(res => { 
-        let card = res.results; 
-        for(let i = 0; i < newCard.length; i++){
-           const card = document.createElement("div");
-           tom.appendChild(newCard)
-           newArea.innerText =  card[i].name + ", "
-        }    
-    })
-    .catch(err => { console.log("something went wrong...", err) })    
-}
+    if (text === data[1]){
+    console.log("good")
+    }});
 
 
 
 
-// Need object to store the questions and anwsers
 
-let questions = {
-    question1: "What is the largest bone in the body",
-    question2: "What organ pumps blood",
-    question3: "What is the largest organ"
-}
-    
-
+  /*
 let myQuestions = [
 	{
 		question: "What is 10/2?",
@@ -62,6 +52,28 @@ let myQuestions = [
 		correctAnswer: 'c'
 	}
 ];
+
+
+
+
+function newCard(event) {
+    event.preventDefault()
+    input.innerHTML = " ";
+    fetch('', { })
+    .then(res => { return res })
+    .then(res => { 
+        let card = res.results; 
+        for(let i = 0; i < newCard.length; i++){
+           const card = document.createElement("div");
+           tom.appendChild(newCard)
+           newArea.innerText =  card[i].name + ", "
+        }    
+    })
+    .catch(err => { console.log("something went wrong...", err) })    
+}
+
+
+
 
 
 
@@ -157,7 +169,7 @@ let myQuestions = [
   }
 
 
-
+*/
 
 
   //https://stackoverflow.com/questions/14542062/eventlistener-enter-key
