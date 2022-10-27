@@ -6,11 +6,17 @@ let totalScore = 0;
 
 
 allQuestions = [
-    "Pumps blood in body",
-    "You use to hear",
-    "You use to see",
-    "You use to taste",
-    "Largest organ in body",
+    "Pumps blood throughout body",
+    "You use this organ to hear sounds",
+    "You use this organ to see",
+    "You use this organ to taste",
+    "Largest organ of your body",
+    "This covers the top of your head",
+    "Organs that performs breathing function",
+    "Organ that controls your whole body",
+    "Cleans bloodstream from inpurities",
+    "Part of the body that you use to eat and talk",
+    
 ]
 
 allanswers = [
@@ -19,6 +25,11 @@ allanswers = [
     "eye",
     "tongue",
     "skin",
+    "hair",
+    "lungs",
+    "brain",
+    "kidney",
+    "mouth",
 ]
  
 let text = '';
@@ -27,25 +38,27 @@ let textBox = document.querySelector('.input');
 let button = document.querySelector('#button');
 let show = document.querySelector('.showQuestion');
 let score = document.querySelector('.totalScore');
+let questionHere = document.querySelector('.questionHere');
+
 
 let currentQuestion = 0;
+fillQuestion = allQuestions[currentQuestion]
+show.innerHTML = fillQuestion
 
-
-   //fillQuestion = allQuestions[currentQuestion]
-    //show.innerHTML = fillQuestion
-   //console.log(fillQuestion)
 
      button.addEventListener('click', checkInput)
 
 
      function checkInput(evt){
         evt.preventDefault()
-        console.log(textBox.value)
+
         text = textBox.value
         console.log(allanswers[currentQuestion])
 
-        fillQuestion = allQuestions[currentQuestion]
+        let fillQuestion = allQuestions[currentQuestion]
         show.innerHTML = fillQuestion
+
+        
        console.log(fillQuestion)
 
         if(text === allanswers[currentQuestion] ){
@@ -57,23 +70,9 @@ let currentQuestion = 0;
             
         }
           console.log(totalScore)
-          score.innerHTML = "Total Score" + totalScore
-
+          score.innerHTML = "Total Score " + totalScore;
      }
 
    
 
-
-/*
-    button.addEventListener('click', function (evt){
-    evt.preventDefault()
-    text = textBox.value
-    if(text === allanswers[currentQuestion]){
-    totalScore ++
-    
-    console.log(currentQuestion)
-    }
-});
-console.log(totalScore)
-*/
 
