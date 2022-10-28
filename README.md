@@ -2,7 +2,14 @@
 Study terms and definitions 
 
 **Project Description 
-We used Javscript, CSS and HTML to build an interactive game. 
+Languages Used:
+Javscript, 
+CSS  
+HTML 
+![IMG_4528](https://user-images.githubusercontent.com/47038229/198618972-3e81a8ae-581e-4865-8c08-d79dee0edbec.jpg)
+
+
+**Interactive game. 
 This game is a fill in the blank questions about the body.
 I hope to add more CSS and make javscript more interactive.
 
