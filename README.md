@@ -20,19 +20,19 @@ Must put answer in the input and press button
 
 
 
-**Interactive game. 
+# Interactive game. 
 This game is a fill in the blank questions about the body.
 
 
 
 
-**Future
+# Future
 I hope to add more CSS and make javscript more interactive. Using flexbox would be nice to move in more appealing spots.
 I want to add multiple levels.
 
 
 
-**How to Use
+# How to Use
 
 Fill in the blank with best response to the question and press button.
 Hover over the card to know the answer.
@@ -42,7 +42,7 @@ It will move to the next question after inputting correct answer.
 
 
 
-**Inspiration
+# Inspiration
 What inspired me the the wesbite Quizlet 
 https://quizlet.com/latest
 To learn the meaning of the words through memorization.
