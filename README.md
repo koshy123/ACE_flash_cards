@@ -3,9 +3,7 @@ Study terms and definitions
 
 **Project Description 
 Languages Used:
-Javscript, 
-CSS  
-HTML 
+Javscript,  CSS  , HTML 
 
 
 ![IMG_4528](https://user-images.githubusercontent.com/47038229/198618972-3e81a8ae-581e-4865-8c08-d79dee0edbec.jpg)
@@ -13,7 +11,7 @@ HTML
 
 The Wireframe is a simple to use page. 
 
-User Experience:
+#User Experience:
 They must type the name in lowercase
 Must put answer in the input and press button
 
@@ -21,7 +19,7 @@ Must put answer in the input and press button
 
 
 # Interactive game. 
-This game is a fill in the blank questions about the body.
+This game is a fill in the blank questions about the body. 
 
 
 
