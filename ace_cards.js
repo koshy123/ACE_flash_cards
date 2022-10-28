@@ -1,8 +1,7 @@
 
-//My total score 
 let totalScore = 0;
 
-
+let text = '';
 
 
 let allQuestions = [
@@ -16,6 +15,7 @@ let allQuestions = [
     "Organ that controls your whole body",
     "Cleans bloodstream from inpurities",
     "Part of the body that you use to eat and talk",
+    "Congrats! You really know your stuff",
     
 ]
 
@@ -30,9 +30,10 @@ let allAnswers = [
     "brain",
     "kidney",
     "mouth",
+    "10/10",
 ]
  
-let text = '';
+
 
 let textBox = document.querySelector('.input');
 let button = document.querySelector('#button');
@@ -64,15 +65,23 @@ show.innerHTML = fillAnwser
        console.log(fillQuestion)
 
         if(text === allAnswers[currentQuestion] ){
+
             console.log("right anwser")
+
             totalScore = totalScore + 1
+
             currentQuestion = currentQuestion + 1 
+
             fillQuestion = allQuestions[currentQuestion]
+
             fillAnwser = allAnswers[currentQuestion]
+
             show.innerHTML = fillAnwser
+
             questionHere.innerHTML = fillQuestion
         }
           console.log(totalScore)
+          
           score.innerHTML = "Total Score " + totalScore;
      }
 
