@@ -12,10 +12,16 @@ HTML
 
 
 
+User Experience:
+They must type the name in lowercase
+Must put answer in the input and press button
+
 **Interactive game. 
 This game is a fill in the blank questions about the body.
-I hope to add more CSS and make javscript more interactive.
 
+**Future
+I hope to add more CSS and make javscript more interactive.
+I want to add multiple levels
 
 **How to Use
 
@@ -29,6 +35,9 @@ It will move to the next question after inputting correct answer.
 What inspired me the the wesbite Quizlet 
 https://quizlet.com/latest
 To learn the meaning of the words through memorization.
+
+
+
 
 **Credits
 https://koshy123.github.io/Flash-Cards/
