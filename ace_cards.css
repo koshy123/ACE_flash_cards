@@ -1,11 +1,11 @@
 h1{
-    color: blue;
+    color: green;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -49,11 +49,6 @@ h1{
 
 
 
-  .name{
-    font-size: 30px;
-    border-color: red;
-    border-width: 5px;
-  }
 
 #inputTitle{
   font-size: 30px;
@@ -99,7 +94,19 @@ body {
 }
 
 #button{
-  width: 20px;
-  height: 20px;
+
+  width: 40px;
+  height: 25px;
   background-color: green;
+}
+
+.input{
+  margin-top: 50px;
+  width: 150px;
+  height: 30px;
+}
+
+.totalScore{
+  color: white;
+
 }
