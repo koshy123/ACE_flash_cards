@@ -44,6 +44,8 @@ let questionHere = document.querySelector('.questionHere');
 let currentQuestion = 0;
 fillQuestion = allQuestions[currentQuestion]
 show.innerHTML = fillQuestion
+questionHere.innerHTML = fillQuestion
+
 
 
      button.addEventListener('click', checkInput)
@@ -55,8 +57,6 @@ show.innerHTML = fillQuestion
         text = textBox.value
         console.log(allanswers[currentQuestion])
 
-        let fillQuestion = allQuestions[currentQuestion]
-        show.innerHTML = fillQuestion
 
         
        console.log(fillQuestion)
@@ -67,7 +67,7 @@ show.innerHTML = fillQuestion
             currentQuestion = currentQuestion + 1 
             fillQuestion = allQuestions[currentQuestion]
             show.innerHTML = fillQuestion
-            
+            questionHere.innerHTML = fillQuestion
         }
           console.log(totalScore)
           score.innerHTML = "Total Score " + totalScore;
