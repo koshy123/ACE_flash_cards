@@ -5,7 +5,7 @@ let totalScore = 0;
 
 
 
-allQuestions = [
+let allQuestions = [
     "Pumps blood throughout body",
     "You use this organ to hear sounds",
     "You use this organ to see",
@@ -19,7 +19,7 @@ allQuestions = [
     
 ]
 
-allanswers = [
+let allAnswers = [
     "heart",
     "ear",
     "eye",
@@ -43,8 +43,10 @@ let questionHere = document.querySelector('.questionHere');
 
 let currentQuestion = 0;
 fillQuestion = allQuestions[currentQuestion]
-show.innerHTML = fillQuestion
+
 questionHere.innerHTML = fillQuestion
+fillAnwser = allAnswers[currentQuestion]
+show.innerHTML = fillAnwser
 
 
 
@@ -55,18 +57,19 @@ questionHere.innerHTML = fillQuestion
         evt.preventDefault()
 
         text = textBox.value
-        console.log(allanswers[currentQuestion])
+        console.log(allAnswers[currentQuestion])
 
 
         
        console.log(fillQuestion)
 
-        if(text === allanswers[currentQuestion] ){
+        if(text === allAnswers[currentQuestion] ){
             console.log("right anwser")
             totalScore = totalScore + 1
             currentQuestion = currentQuestion + 1 
             fillQuestion = allQuestions[currentQuestion]
-            show.innerHTML = fillQuestion
+            fillAnwser = allAnswers[currentQuestion]
+            show.innerHTML = fillAnwser
             questionHere.innerHTML = fillQuestion
         }
           console.log(totalScore)
