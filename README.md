@@ -11,7 +11,7 @@ HTML
 ![IMG_4528](https://user-images.githubusercontent.com/47038229/198618972-3e81a8ae-581e-4865-8c08-d79dee0edbec.jpg)
 
 
-The Wireframe is a simple to use page 
+The Wireframe is a simple to use page. 
 
 User Experience:
 They must type the name in lowercase
@@ -27,8 +27,8 @@ This game is a fill in the blank questions about the body.
 
 
 **Future
-I hope to add more CSS and make javscript more interactive.
-I want to add multiple levels
+I hope to add more CSS and make javscript more interactive. Using flexbox would be nice to move in more appealing spots.
+I want to add multiple levels.
 
 
 
