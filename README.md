@@ -25,5 +25,10 @@ Score will keep track over the card.
 It will move to the next question after inputting correct answer.
 
 
+**Inspiration
+What inspired me the the wesbite Quizlet 
+https://quizlet.com/latest
+To learn the meaning of the words through memorization.
+
 **Credits
 https://koshy123.github.io/Flash-Cards/
